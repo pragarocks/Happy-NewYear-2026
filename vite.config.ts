@@ -2,11 +2,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Replace 'Happy-NewYear-2026' with your actual repository name
+// This MUST match your repository name on GitHub
 export default defineConfig({
   plugins: [react()],
   base: '/Happy-NewYear-2026/', 
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
   }
 });
